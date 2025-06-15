@@ -1,0 +1,31 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+<style>
+    #edit {
+        border: 2px solid #444;  
+        text-decoration: none;
+        margin-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        float: right;
+    }
+    #edit:hover {
+        border-color: #00f7ffab;
+    }
+</style>
+{% if entry_page == None %}
+    <h1>Page not found</h1>
+
+{% else %}
+<div>
+    <a id = "edit" href="{% url 'edit' entry_title %}">Edit Page</a>
+</div>
+    {{ entry_page|safe }}
+{% endif %}
+
+{% endblock %}

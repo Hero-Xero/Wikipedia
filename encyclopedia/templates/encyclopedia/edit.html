@@ -1,0 +1,36 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %} 
+
+{% block title %}
+    Edit Page
+{% endblock %}
+
+{% block head %}
+    <link href="{% static 'encyclopedia/create-edit.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1>Edit Page</h1>
+        <form action="{% url 'edit' title %}" method="post" class="form-container">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input  type="text" name="title" id="title" class="form-control" value="{{ title }}">
+            </div>
+
+            <div class="form-group">
+                <label for="content">Content</label>
+                <textarea  name="content" id="content" class="form-control" rows="10" >{{ content }}</textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Edit Entry</button>
+            {% if error %}
+                <div id="error-bar" style="background-color: red; color: white; padding: 10px; margin-top: 10px;">
+                    {{ error }}
+                </div>
+            {% endif %}
+        </form>
+    </div>
+{% endblock %}

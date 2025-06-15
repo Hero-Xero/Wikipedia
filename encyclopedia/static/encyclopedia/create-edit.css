@@ -1,0 +1,84 @@
+/* Ensure the body has space for the form */
+body {
+font-family: Arial, sans-serif;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #121212;
+}
+
+.form-container {
+    background-color: #121212;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+
+.form-control {
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.808);
+    border-color: #ffffff63;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #121212;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#content {
+    height: 450px;
+}

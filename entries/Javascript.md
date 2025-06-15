@@ -1,0 +1,4 @@
+# JavaScript
+
+---
+JavaScript is a versatile, high-level programming language that is widely used for web development. It allows developers to create interactive and dynamic web pages by manipulating the Document Object Model (DOM). JavaScript is an essential part of the web technology stack, alongside HTML and CSS. It supports event-driven, functional, and imperative programming styles, making it a powerful tool for both client-side and server-side development. With the advent of frameworks and libraries like React, Angular, and Node.js, JavaScript has become even more integral to modern web applications.
